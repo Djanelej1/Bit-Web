@@ -1,0 +1,35 @@
+p1{
+    background-color:antiquewhite;
+    color: darkturquoise;
+    opacity: 0.5;
+
+}
+p1{
+    color: rgb(0,206,209);
+}
+p2{
+    background-color: rgb(0, 255, 225, 0.5);
+    color :rgb(0,206,209);
+}
+p3{ background-color: beige;
+ color:#00ced1;
+}
+div{
+    background-color:rgb(0, 255, 225);
+    opacity: 0.7;
+}
+td:first-child{
+    background-color:aliceblue;
+}
+td:nth-child(2){
+    background-color:hotpink;
+}
+td:nth-child(3){
+    background-color:blueviolet;
+}
+td:nth-child(4){
+    background-color:darkcyan;
+}
+td:nth-child(5){
+    background-color:darkseagreen;
+}

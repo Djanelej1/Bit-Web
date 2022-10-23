@@ -1,0 +1,23 @@
+body{
+  color: chocolate ;
+}
+
+ol{
+    color: brown;
+}
+li{
+    text-shadow: 1px 1px 1px rgb(56, 8, 8);
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:green
+
+}
+a:active{
+    color: blue;
+}
