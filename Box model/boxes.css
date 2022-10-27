@@ -1,0 +1,17 @@
+
+p.first{
+    background-color: rgb(236, 236, 60);
+    height: 500px;
+    width: 400px;
+    max-width: 300px;
+    overflow: hidden;
+
+}
+
+p.second {
+    background-color: rgb(192, 59, 59);
+    height:300px;
+    width:600px;
+    overflow: auto;
+    max-height: 200px;
+}
