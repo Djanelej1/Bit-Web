@@ -1,0 +1,88 @@
+#prvalista{
+list-style-type: circle;
+}
+#drugalista{
+    list-style-type: style type square;
+}
+#trecalista{
+    list-style-type: upper-alpha;
+}
+#cetvrtalista{
+    list-style-type: lower-roman;
+}
+#petalista{
+    list-style-image: url(../tequila_sunrise_drink_cocktail_glass_icon_210129.ico);
+    width: 200px;
+}
+#sestalista{
+    list-style-image: url(../cocktail-glass_icon-icons.com_73621.ico);
+    list-style-position: inside;
+    width:200px;
+}
+#tabela{
+    
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+th{
+    background-color: red;
+}
+
+#slika{
+    height: 100px;
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
+tr:hover{
+    background-color: yellow;
+}
+tr:nth-child(odd){
+    background-color: gray;
+}
+#forma{
+    width: 10cm;
+    height: 10cm;
+    background-color: azure;
+    text-align: left;
+    border: 1px;
+    border-style: solid;
+    border-radius: 15px,0,15px,0;
+    
+}
+fieldset.forma{
+    border: 1px; 
+    border-style: solid;
+    border-radius: 15px,15px;
+    
+}
+input{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+border-radius: 15px,15px;
+
+    
+}
+#div.submit{
+    
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    
+}
+span{
+    color:orange;
+}
+h1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-size: xx-large;
+}
