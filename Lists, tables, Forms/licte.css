@@ -44,38 +44,53 @@ tr:hover{
 tr:nth-child(odd){
     background-color: gray;
 }
-#forma{
-    width: 10cm;
-    height: 10cm;
-    background-color: azure;
-    text-align: left;
-    border: 1px;
-    border-style: solid;
-    border-radius: 15px,0,15px,0;
-    
-}
-fieldset.forma{
-    border: 1px; 
-    border-style: solid;
-    border-radius: 15px,15px;
-    
-}
-input{
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
-border-radius: 15px,15px;
+
 
     
+div.forma{
+    background-color: aliceblue;
+    width:50%;
+    text-align:justify;
+    margin-top: 5px;
+    margin-bottom: px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.60); 
+    padding: 20px; 
+    border-style: groove;
+     
 }
-#div.submit{
-    
-    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+
+input{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 10px;
+    width:60%;
+    align-items: center;
+    border-radius: 5px ;
+    border-style: groove;
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    cursor:auto;
+  }
+  label{
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      padding: 10px;
+      width:60%;
+
+  }
+.submit{
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: crimson;
+    text-decoration: blanchedalmond;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    border-style: hidden;
+    cursor:pointer
     
 }
 span{
@@ -86,3 +101,4 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-align: center;
 font-size: xx-large;
 }
+
