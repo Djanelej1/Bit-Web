@@ -1,0 +1,132 @@
+header{
+    background-color: white;
+    width:auto;
+}
+main{
+    width:960px;
+    top:auto;
+    text-align: center;
+    margin:0 auto;   
+}
+
+.container {
+    width:960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container {
+    display: inline-flex !important;
+}
+nav{
+    color:rgb(248, 244, 238) !important;
+    background-color: firebrick;
+    top: 100px;
+    height: 50px;
+    text-align: end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+img{
+    width:480px;
+    height:480px;
+    top:150px;
+    right:100px;
+    left:100px;
+    margin: auto;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+.one{
+    display:inline-block;
+    background-color: red;
+    width:300px;
+    height:200px;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    padding: 5px 5px;
+   
+    
+    
+}
+.two{
+    display: inline-block;
+    background-color: blue;
+    width:300px;
+    height:200px;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    padding: 5px 5px;
+}
+
+.aside{
+    
+    display: inline-block;
+    background-color: yellow;
+    width:300px;
+    height:200px;
+    text-align: left;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 5px;
+    color:black !important;
+      
+    }
+    .three{
+    display: inline-block;
+    background-color: yellow;
+    width:300px;
+    height:200px;
+    color:white;
+    text-align: center;
+    font-size: larger;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    padding: 5px 5px;
+    
+    }
+    .none{
+        display:inline-block;
+        width:300px;
+        height:200px;
+    }
+    p{
+        display: inline-block;
+        text-align: left;
+        width:300px;
+        height:200px; 
+        block-size: auto;
+        vertical-align: top;
+        padding: 5px 5px;
+        
+    }
+    .four{
+        display: inline-block;
+        background-color: green;
+        width:300px;
+        height:200px;
+        color:white;
+        text-align: center; 
+        font-size: larger;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    padding: 5px 5px;
+    }
+    footer{
+        background-color: blue;
+        color:white;
+        width:100%;
+        height:30px;
+    }
