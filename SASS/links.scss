@@ -1,61 +1,99 @@
-$color:blue;
+//Using Pseudo-classes in SASS
+
+$notUnderline: none;
+$color: blue;
 $active: yellow;
-$visited:orange;
+$visited: orange;
 $notVisited: green;
-$important:bold;
+$important: bold;
 
-a{
- text-decoration: none;
- color:$color;
- &:active{
-    color: $active;
- }
- &:visited{
-    color: $visited;
- }
- &:default{
-    color: $notVisited;
- }
- .Important{
-    font-weight: $important;
- }
+a {
+   text-decoration: $notUnderline;
+
+   &:active {
+      background-color: $active;
+   }
+
+   &:visited {
+      background-color: $visited;
+   }
+
+   &:default {
+      background-color: $notVisited;
+   }
+
 }
-$i:16px;
-@for $i from 1 through 4{
- .item-#{$i} {
-    font-size: 2px + $i;
- }
+
+.Important {
+   font-weight: $important;
 }
-$redni:item-2;
-@mixin forParagraphs{
- @if $redni==item-1{
-    background-color: yellow;
- }
- @else if $redni==item2{
-    background-color: aqua;
- }
- @else if $redni==item-3{
-    background-color: green;
- }@else {
- background-color:red;
- }}
- p{
-    @include forParagraphs()
- }
 
- $width:200px;
- $padding:20px;
- $border:8px;
- 
- @function totalWidth($width){
-    @if (content-box){
-   @return $width+(2*$padding)+(2*$border);
- } @else if (border-box) { @return $width -(2*$padding)+(2*$border); }
- }
- .content-box{
-    width:totalWidth(200px);
- }
+//Control Directives (@for)
 
- .border-box{
-    width:totalWidth(100px);
- }
+$fontSize: 16px;
+@mixin forP() {
+
+   @for $i from 1 through 4 {
+      .item-#{$i} {
+         font-size: $fontSize+2px *$i;
+         
+      }
+   } 
+}
+
+.paragraphs{
+   @include forP();
+}
+
+//Control Directives (@if)
+
+$redni: item-2;
+
+@mixin forParagraphs {
+   @if $redni==item-1 {
+      background-color: yellow;
+   }
+
+   @else if $redni==item2 {
+      background-color: aqua;
+   }
+
+   @else if $redni==item-3 {
+      background-color: green;
+   }
+
+   @else {
+      background-color: red;
+   }
+}
+
+p {
+   @include forParagraphs($redni)
+}
+
+//Functions
+$width: 200px;
+$padding: 20px;
+$border: 8px;
+
+@function totalWidth($width) {
+   @if (content-box) {
+      @return $width+(2*$padding)+(2*$border);
+   }
+
+   @else if (border-box) {
+      @return $width -(2*$padding)+(2*$border);
+   }
+}
+
+.content-box {
+   background-color: $active;
+   display: block;
+   width: totalWidth(300px);
+}
+
+.border-box {
+   background-color: $notVisited;
+   display: block;
+   width: totalWidth(100px);
+}

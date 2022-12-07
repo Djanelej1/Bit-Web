@@ -1,0 +1,585 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../SASS-CSS-Project/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Font Awesome 6 Free;
+    src: url("../SASS-CSS-Project/assets/fontawesome-free-6.2.1-web/css/fontawesome.min.csss");
+
+}
+
+.fa,
+.fas {
+    font-family: "Font Awesome 6 Free";
+
+}
+
+$fontall: "Roboto";
+$noMargin: 0px;
+$noPadding: 0px;
+$fullwidth: 100%;
+
+@mixin blueH2 {
+    text-align: left;
+    color: #56a3e0;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == tablet {    
+    @media (min-width: 768px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == desktop {
+    @media (min-width: 1200px) and (max-width: 1920px) {
+      @content;
+    }
+  }
+}
+body {
+    margin: $noMargin;
+    padding: $noPadding;
+    
+}
+
+* {
+    font-family: $fontall;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@mixin flex-column($direction, $alignitem, $justcont) {
+
+    flex-direction: $direction;
+    align-items: $alignitem;
+    justify-content: $justcont;
+}
+
+.header {
+    display: flex;
+    @include flex-column(column, center, center);
+    font-weight: bold;
+    color: black;
+    flex: 0 0 100%;
+    margin-top: 20px;
+   
+
+    @media (min-width: 768px) and (max-width: 1200px), (min-width: 1200px) and (max-width: 1920px){
+        position: relative;
+        padding: $noPadding;
+        width: $fullwidth;
+    }
+
+
+    .H1 {
+        margin:auto;
+        font-size: 1em;
+
+        @media (min-width: 768px) and (max-width: 1200px), (min-width: 1200px) and (max-width: 1920px){
+            display: inline-block;
+            position: absolute;
+            z-index: 2;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 2em;
+        }
+
+    }
+
+    span {
+        flex: 1;
+        color: #fd9727;
+        border-color: black;
+        border-style: solid;
+        border: 2px 2px;
+        border-right: none;
+
+        @media (min-width: 768px) and (max-width: 1200px), (min-width: 1200px) and (max-width: 1920px){
+            border-color: #fff;
+            color: #ffa500;
+        }
+        
+    }
+
+}
+
+.Header-nav {
+    display: flex;
+    @include flex-column(column, center, space-between);
+    background-color: #81c3f5;
+    margin: 25px;
+    padding: 0px 50px;
+    font-size: 0.5em;
+    line-height: 15px;
+
+    @media (min-width: 768px) and (max-width: 1200px),(min-width: 1200px) and (max-width: 1920px) {
+        position: absolute;
+        z-index: 2;
+        right: 100px;
+        margin: $noMargin;
+        top: 3px;
+        padding: $noPadding;
+        background-color: transparent;
+    }
+
+    ul {
+        flex: 1;
+        text-align: center;
+        align-self: center;
+        padding: $noPadding;
+        list-style: none;
+
+        @media (min-width: 768px) and (max-width: 1200px),(min-width: 1200px) and (max-width: 1920px) {
+            display: flex;
+            align-items: stretch;
+
+        }
+    }
+
+    li {
+        @media (min-width: 768px) and (max-width: 1200px),(min-width: 1200px) and (max-width: 1920px) {
+            margin-left: 10px;
+        }
+
+    }
+
+    a {
+        margin-top: 10px;
+        align-self: center;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+}
+
+.textImage {
+    display: flex;
+    background-image: url(../SASS-CSS-Project/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex-column(column, center, stretch);
+    padding: 70px 10px;
+
+    @include devices(tablet) {
+        background-size: cover;
+        display: block;
+        position: relative;
+        margin: $noMargin;
+        width: $fullwidth;
+        text-align: center;
+    }
+
+    @include devices(desktop) {
+        padding: 300px;
+        background-size: cover;
+        display: block;
+        position: relative;
+        margin: $noMargin;
+        width: $fullwidth;
+        text-align: center;
+    }
+
+    h2 {
+
+        color: white;
+        align-self: center;
+        text-align: center;
+        font-size: 1em;
+        align-content: center;
+        @media (min-width: 768px) and (max-width: 1200px),(min-width: 1200px) and (max-width: 1920px) {
+            font-size: 2.45em;
+            font-weight: 400px;
+        }
+
+    }
+
+    a {
+        align-content: center;
+        background-color: #1d6fb2;
+        color: #FFF;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 5px 25px;
+        margin: $noMargin;
+        font-size: 0.7em;
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            align-items: center;
+        }
+    }
+
+
+}
+
+
+
+.border {
+    margin: auto;
+    display: block;
+    margin-inline: auto;
+    width: max-content;
+
+    #one,
+    #two {
+        display: inline-block;
+        border: 1px solid black;
+        width: 70px;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: top;
+
+    }
+
+    .square {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        margin: 0px 10px;
+        transform: rotate(45deg);
+        top: -9px;
+        position: relative;
+    }
+
+}
+
+.Naslov {
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    h1{
+    font-size: 2em;
+    }
+}
+
+.welcome {
+    display: flex;
+    @include flex-column(column, flex-start, center);
+    margin: 50px;
+
+    @include devices(tablet){
+        display: flex;
+        @include flex-column(row, stretch, stretch);
+        flex-wrap: wrap;
+    }
+
+    @include devices(desktop) {
+        display: flex;
+        @include flex-column(row, stretch, stretch);
+        flex-wrap: nowrap;
+    }
+
+    div {
+        flex: 1 0 100%;
+
+        @include devices(tablet) {
+            flex: 1 0 45%;
+        }
+
+        @include devices(desktop) {
+            flex: 1 0 30%;
+        }
+    }
+
+}
+
+.Welcome1,
+.Dream {
+    display: flex;
+    @include flex-column(column, flex-start, stretch);
+    width: $fullwidth;
+
+    h2 {
+        @include blueH2;
+    }
+
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    ul {
+        list-style-image: url(../SASS-CSS-Project/assets/images/arrow_bullet.png);
+        line-height: 45px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 10px 10px;
+        opacity: 0.7;
+        width: $fullwidth;
+    }
+
+}
+
+.home-image {
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: $fullwidth;
+
+    img {
+        width: $fullwidth;
+    }
+
+}
+
+.people {
+    display: flex;
+    @include flex-column(column, flex-start, stretch);
+    color: #fff;
+    margin: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+    @include devices(tablet) {
+        @include flex-column(row, stretch, stretch);
+        margin: 20px;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        column-gap: 10px;
+
+    }
+
+    @include devices(desktop) {
+        display: flex;
+        @include flex-column(row, stretch, stretch);
+        flex-wrap: nowrap;
+    }
+
+    div {
+         flex: 0 0  auto;
+
+        @include devices(tablet) {
+            flex: 0 0 45%;
+        }
+
+        @include devices(desktop) {
+            flex: 1 0 30%;
+            margin-right: 8px;
+        }
+
+    }
+}
+
+.people-box {
+    display: flex;
+    @include flex-column(column, flex-start, center);
+    background-color: #82c3f5;
+    padding-top: 10px;
+    padding-left:5px;
+
+}
+
+.Name-ratings {
+    display: flex;
+    @include flex-column(row, flex-start, flex-start);
+    margin: $noMargin;
+    column-gap: 50px;
+}
+
+.Person-image {
+    overflow: hidden;
+    border-radius: 100%;
+    border: 5px double #fff;
+    width: 70px;
+    
+
+    img {
+        width: $fullwidth;
+
+    }
+}
+
+.Name-Rating {
+    
+    .Person-Name {
+        color: black;
+        font-size:large;
+        padding:5px;
+
+    }
+
+    .rating-paragraph {
+    
+        margin-left: 5px;
+        line-height: 15px;
+
+    }
+}
+
+.Contact-boxes {
+    display: flex;
+    @include flex-column(row, stretch, space-around);
+    flex-wrap: wrap;
+    font-size: 0.7em;
+
+    @include devices(tablet) {
+        display: flex;
+        @include flex-column(row, stretch, space-around);
+        flex-wrap: wrap;
+    }
+
+    @include devices(desktop) {
+        display: flex;
+        @include flex-column(row, stretch, space-around);
+        flex-wrap: nowrap;
+    }
+
+    .Contact,.Connect,.Adress, .House-img  {
+        
+        flex: 1 0 50%;
+    
+        @include devices(desktop) {
+            flex: 1 0 25%;
+        }
+    }
+}
+
+
+.Contact {
+    display: flex;
+    @include flex-column(column, center, center);
+    background-color: #3bdd9a;
+
+}
+
+.img-p {
+    display: flex;
+    @include flex-column(row, center, stretch);
+    margin: $noMargin;
+
+
+}
+
+.Connect {
+    display: flex;
+    @include flex-column(column, center, space-between);
+    text-align: center;
+    background-color: #fc5282;
+    align-content: center;
+
+}
+
+.social-nav ul {
+    text-align: center;
+    display: flex;
+    @include flex-column(row, center, center);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 0;
+
+    li {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 29.1px;
+        height: 29.1px;
+
+    }
+}
+
+.Adress {
+    display: flex;
+    @include flex-column(column, center, space-around);
+    background-color: #376de4;
+    text-align: center;
+    align-content: center;
+}
+
+.House-img {
+    display: flex;
+    @include flex-column(row, stretch, center);
+    background-color: #82c3f5;
+
+    img {
+        margin: auto;
+        width:$fullwidth;
+    }
+}
+
+.Map {
+    padding: $noPadding;
+
+    iframe {
+        width: 100%;
+        margin: $noMargin;
+    }
+}
+
+.container-form {
+    display: flex;
+    @include flex-column(column, stretch, center);
+    flex-wrap: wrap;
+    margin: 25px;
+
+    input {
+        margin-top: 15px;
+        flex: 1 0 auto;
+        width: $fullwidth;
+        text-align: left;
+    }
+
+    textarea {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+.input-box {
+
+    @media (min-width: 768px) and (max-width: 1200px),
+    (min-width: 1200px) and (max-width: 1920px) {
+
+        display: flex;
+        row-gap: 5px;
+        @include flex-column(row, stretch, space-evenly);
+
+
+        div {
+            flex: 0 0 33%;
+            margin-right: 5px;
+        }
+    }
+}
+
+.button1 {
+    margin-top: 15px;
+    background-color: #fd9727;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.Footer {
+    display: flex;
+    @include flex-column(column, center, center);
+    background-color: #212121;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.Footer-nav {
+    list-style: none;
+    display: flex;
+    padding: $noPadding;
+
+    a {
+
+        @include flex-column(row, stretch, space-around);
+        text-decoration: none;
+        color: #fff;
+        margin-left: 8px;
+    }
+}
