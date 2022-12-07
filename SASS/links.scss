@@ -1,0 +1,61 @@
+$color:blue;
+$active: yellow;
+$visited:orange;
+$notVisited: green;
+$important:bold;
+
+a{
+ text-decoration: none;
+ color:$color;
+ &:active{
+    color: $active;
+ }
+ &:visited{
+    color: $visited;
+ }
+ &:default{
+    color: $notVisited;
+ }
+ .Important{
+    font-weight: $important;
+ }
+}
+$i:16px;
+@for $i from 1 through 4{
+ .item-#{$i} {
+    font-size: 2px + $i;
+ }
+}
+$redni:item-2;
+@mixin forParagraphs{
+ @if $redni==item-1{
+    background-color: yellow;
+ }
+ @else if $redni==item2{
+    background-color: aqua;
+ }
+ @else if $redni==item-3{
+    background-color: green;
+ }@else {
+ background-color:red;
+ }}
+ p{
+    @include forParagraphs()
+ }
+
+ $width:200px;
+ $padding:20px;
+ $border:8px;
+ 
+ @function totalWidth($width){
+    @if (content-box){
+   @return $width+(2*$padding)+(2*$border);
+ } @else if (border-box) { @return $width -(2*$padding)+(2*$border); }
+ }
+ .content-box{
+    width:totalWidth(200px);
+ }
+
+ .border-box{
+    width:totalWidth(100px);
+ }

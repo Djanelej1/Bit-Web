@@ -1,0 +1,7 @@
+@mixin text-shadow (){
+    text-shadow: $blacky;
+ }
+ $redish: 5px 10px red;  
+ @mixin box-shadow() {
+     box-shadow: $redish;   
+ }

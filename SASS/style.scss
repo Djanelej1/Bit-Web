@@ -1,0 +1,23 @@
+$my-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$my-bgc:aqua;
+
+$my-color: black;
+
+.paragraph{
+    width: 30px+30px*(10px/5px);
+    background-color: $my-bgc;
+    font-family: $my-font;
+    color:$my-color;
+    border-style: solid;
+    border-color:red;
+}
+
+.paragraph1{
+    @extend .paragraph;
+    border-color: blue !important;
+
+}
+.paragraph2{
+    @extend .paragraph;
+    border-color: darkgreen !important;
+}

@@ -1,0 +1,52 @@
+.container{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+    height:auto;
+       
+}
+
+.container>div{
+    font-size: 30px;
+    color:antiquewhite;
+    align-items: stretch;
+}
+#one{
+
+    background-color:burlywood; 
+    flex-grow: 1;
+    height:200px;
+    flex-shrink: 1;
+    width: 50%;
+}
+
+#two{
+    background-color:chocolate;
+    flex-grow: 1;
+    height:200px;
+    flex-shrink: 1;
+    width: 50%;
+}
+#three{
+    background-color:black ;
+    color:azure;
+    flex-grow: 1;
+    height:200px;
+    flex-shrink: 1;
+    width:50%;
+}
+#four{
+    background-color: indianred;
+    flex-grow:8;
+    height:200px;
+    flex-shrink: 7;
+    width: 50%;
+    flex-basis: auto;
+    align-self: flex-start;
+   
+}

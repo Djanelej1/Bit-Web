@@ -1,0 +1,53 @@
+main{
+    
+    display: inline-block;
+}
+header{
+    width:90%;
+}
+img{
+    display:inline-block;
+    width:150px;
+}
+h1{
+    display:inline-block;
+    margin:auto;
+    position:absolute;
+    top:20px;
+    
+}
+h2{
+    display: inline-block;
+    left:150px;
+    margin:auto;
+    top:50px;
+    font-size: small;
+}
+h3{
+    
+    display:inline-block;
+    margin:auto;
+    top: 200px;
+
+}
+
+aside{
+    display: inline-block;
+    margin:auto;
+    width:45%;
+    
+    
+}
+.vertical-line{
+    display: inline-block;
+    border-left: 6px solid #ccc;
+    left:45%;
+    height: 400px;
+    position:absolute;
+}
+
+section{
+    display: inline-block;
+    left:10px;
+    width:45%;
+}

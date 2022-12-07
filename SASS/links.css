@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+  color: blue; }
+  a:active {
+    color: yellow; }
+  a:visited {
+    color: orange; }
+  a:default {
+    color: green; }
+  a .Important {
+    font-weight: bold; }
+
+.item-1 {
+  font-size: 3px; }
+
+.item-2 {
+  font-size: 4px; }
+
+.item-3 {
+  font-size: 5px; }
+
+.item-4 {
+  font-size: 6px; }
+
+p {
+  background-color: red; }
+
+.content-box {
+  width: 256px; }
+
+.border-box {
+  width: 156px; }
+
+/*# sourceMappingURL=links.css.map */

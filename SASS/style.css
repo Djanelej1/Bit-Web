@@ -1,0 +1,15 @@
+.paragraph, .paragraph1, .paragraph2 {
+  width: 90px;
+  background-color: aqua;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  border-style: solid;
+  border-color: red; }
+
+.paragraph1 {
+  border-color: blue !important; }
+
+.paragraph2 {
+  border-color: darkgreen !important; }
+
+/*# sourceMappingURL=style.css.map */

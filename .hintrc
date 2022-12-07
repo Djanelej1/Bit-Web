@@ -10,6 +10,13 @@
         "listitem": "off",
         "list": "off"
       }
+    ],
+    "meta-viewport": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
     ]
   }
 }
