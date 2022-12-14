@@ -1,0 +1,46 @@
+*{
+    text-align: left;
+}
+.nav-header{
+    text-align: end;
+    
+}
+.nav-header>a{
+    
+    text-decoration: none;
+    color: white;
+}
+img{
+    width:500px;
+    height:400px;
+    margin: auto;
+    display:inline-block;
+    
+    
+}
+
+.col-4{
+    width:300px;
+    height:200px;
+    text-align: center;
+    
+}
+
+.aside>.row>a{
+    background-color:coral;
+    text-decoration: none;
+    color:black;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.row p{
+    color:black;
+}
+.row{
+    text-align: center;
+    color: white;
+}
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+}

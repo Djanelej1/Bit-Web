@@ -1,0 +1,19 @@
+.container-fluid{
+    border-style: double;
+}
+img{
+    width: 600px;
+    height: 500px;
+}
+h1{
+    font-size: 30px ;
+    text-align: center;
+}
+.table-with-borders>.row>.col-3{
+    
+    border-style: double;
+
+}
+.col-9{
+    border-style: double;
+}
